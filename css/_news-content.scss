@@ -1,4 +1,4 @@
-.news{
+.news-content{
     .topnav{
         background: $primary_color;
         li a{
@@ -16,14 +16,12 @@
             }
         }
     }
-    img{
-        width: 100px;
-        height: 80px;
-    }
+
     .content-left{
         width: 700px;
-        .title{
-            border-bottom: 2px solid $text_color;
+        img{
+            width: 700px;
+            height: 500px;
         }
         .content{
             h3{
@@ -41,6 +39,10 @@
     }
     .content-right{
         width: 380px;
+        img{
+            width: 100px;
+            height: 80px;
+        }
         .title{
             border-bottom: 2px solid $text_color;
         }
@@ -60,13 +62,5 @@
     }
     .border-bottom{
         border-bottom: 1px solid darkgray;
-    }
-    .pagination a{  
-        color: $text_color;
-        transition: 0.3s all;
-        &:hover{
-            color: $primary_color;
-        }
-        
     }
 }
