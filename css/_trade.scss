@@ -1,0 +1,43 @@
+.trade{
+    .product-title{
+        background: #BFB595;
+        border-radius: 10px 10px 0 0;
+    }
+    .product-content{
+        width: 100%;
+    }
+    .chart-filter{
+        z-index: 99;
+        position: fixed;
+        >li>a{
+            width: 165px;
+            color: $text_color;
+            background-color: lightsalmon;
+            &:active{
+                background: $text_color;
+                color: #ebcf46;
+            }
+            &:hover{
+                background: $text_color;
+                color: #ebcf46;
+            }
+        }
+        >li li{
+            color: #000;
+        }
+        ul ul{
+            display: none;
+        }
+        ul>li>a{
+            color: $text_color;
+            &:hover{
+                color: #BFB595;
+            }
+        } 
+    }
+    img{
+        z-index: 1;
+        width: 100%;
+        height: 400px;
+    }
+}

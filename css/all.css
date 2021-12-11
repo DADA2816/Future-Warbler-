@@ -1195,4 +1195,56 @@ img {
   background-color: #4F4E4B;
   color: #ebcf46;
 }
+
+.trade .product-title {
+  background: #BFB595;
+  border-radius: 10px 10px 0 0;
+}
+
+.trade .product-content {
+  width: 100%;
+}
+
+.trade .chart-filter {
+  z-index: 99;
+  position: fixed;
+}
+
+.trade .chart-filter > li > a {
+  width: 165px;
+  color: #4F4E4B;
+  background-color: lightsalmon;
+}
+
+.trade .chart-filter > li > a:active {
+  background: #4F4E4B;
+  color: #ebcf46;
+}
+
+.trade .chart-filter > li > a:hover {
+  background: #4F4E4B;
+  color: #ebcf46;
+}
+
+.trade .chart-filter > li li {
+  color: #000;
+}
+
+.trade .chart-filter ul ul {
+  display: none;
+}
+
+.trade .chart-filter ul > li > a {
+  color: #4F4E4B;
+}
+
+.trade .chart-filter ul > li > a:hover {
+  color: #BFB595;
+}
+
+.trade img {
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+}
 /*# sourceMappingURL=all.css.map */
