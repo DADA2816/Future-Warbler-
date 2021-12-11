@@ -1,4 +1,4 @@
-.class{
+.class-content{
     .topnav{
         background: #BFB595;
         border-radius: 10px;
@@ -25,11 +25,30 @@
         }
     }
     .main{
-        margin: 20px 0 0;
-        flex-wrap: wrap;
-        >li{
-            width: 330px;
-            margin-bottom: 30px;
+        .content-left{
+            width: 60%;
+        }
+        .content-right{
+            width: 35%;
+            a{
+                color: $text_color;
+                transition: 0.5s all;
+                &:hover{
+                    color: #BFB595;
+                }
+            }
+            >h3{
+                border-radius: 10px 10px 0 0;
+                background-color: #ebcf46;
+            }
+            li:last-child{
+                border-top: 2px dotted $text_color;
+                border-radius: 0 0 10px 10px;
+            }
+        }
+        img{
+            width: 650px;
+            height: 400px;
         }
         .tag{
             flex-wrap: wrap;
@@ -45,35 +64,6 @@
                 }
             }
         }
-        .go-class{
-            background-color: #ebcf46;
-            color: $text_color;
-            transition: 0.5s all;
-            border-radius: 40px;
-            &:hover{
-                background-color: $text_color;
-                color: $primary_color;
-            }
-        }
-        img{
-            max-width: 330px;
-            height: 200px;
-            border-radius: 20px 20px 0px 0px;
-        }
     }
-    .content{
-        border-radius: 0px 0px 20px 20px;
-        height: 350px;
-        p{
-            height: 100px;
-        }
-    }
-    .pagination a{  
-        color: $text_color;
-        transition: 0.3s all;
-        &:hover{
-            color: #D9C76C;
-        }
-        
-    }
+
 }

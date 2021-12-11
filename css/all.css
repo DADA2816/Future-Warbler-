@@ -125,6 +125,10 @@ table {
   margin-top: 30px;
 }
 
+.mb-6 {
+  margin-bottom: 30px;
+}
+
 .mr-10 {
   margin-right: 50px;
 }
@@ -267,6 +271,12 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.jcfs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .jcfe {
@@ -611,203 +621,249 @@ img {
           transform: rotate(-30deg);
 }
 
-.class .main {
-  margin: 60px 0px 90px;
+.class .topnav {
+  background: #BFB595;
+  border-radius: 10px;
 }
 
-.class .main a {
-  background-color: #FFDD00;
+.class .topnav a {
+  color: #4F4E4B;
+}
+
+.class .topnav a:hover {
+  background-color: #4F4E4B;
+  color: #ebcf46;
+  border-radius: 10px;
+}
+
+.class .topnav input {
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px 0 0 5px;
+  border-style: unset;
+}
+
+.class .topnav button {
+  border-style: unset;
+  border-radius: 0 5px 5px 0;
+}
+
+.class .topnav button:hover {
+  background-color: #ebcf46;
+}
+
+.class .main {
+  margin: 20px 0 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.class .main > li {
+  width: 330px;
+  margin-bottom: 30px;
+}
+
+.class .main .tag {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.class .main .tag a {
+  margin-right: 10px;
+  background-color: #D9C76C;
+  color: #4F4E4B;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  border-radius: 10px;
+}
+
+.class .main .tag a:hover {
+  background-color: #4F4E4B;
+  color: #FFDD00;
+}
+
+.class .main .go-class {
+  background-color: #ebcf46;
   color: #4F4E4B;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
   border-radius: 40px;
 }
 
-.class .main a:hover {
+.class .main .go-class:hover {
   background-color: #4F4E4B;
   color: #FFDD00;
 }
 
 .class .main img {
-  width: 400px;
-  height: 300px;
+  max-width: 330px;
+  height: 200px;
   border-radius: 20px 20px 0px 0px;
 }
 
 .class .content {
   border-radius: 0px 0px 20px 20px;
+  height: 350px;
 }
 
-.classintro-1 .main {
-  margin: 60px 0px 30px;
+.class .content p {
+  height: 100px;
 }
 
-.classintro-1 .main button {
-  color: #4F4E4B;
-}
-
-.classintro-1 .main button:hover {
-  background-color: #FFDD00;
-}
-
-.classintro-1 .main ul {
-  border-radius: 20px;
-}
-
-.classintro-1 .main li {
-  border-bottom: #E3E2DD 1px solid;
-}
-
-.classintro-1 .main a {
+.class .pagination a {
   color: #4F4E4B;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.classintro-1 .main a:hover {
-  color: #FFDD00;
+.class .pagination a:hover {
+  color: #D9C76C;
 }
 
-.classintro-1 .main p {
-  line-height: 1.2;
+.class-content .topnav {
+  background: #BFB595;
+  border-radius: 10px;
 }
 
-.classintro-1 img {
-  width: 100px;
-  height: 80px;
-}
-
-.classintro-1 .pagination a {
-  color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.classintro-1 .pagination a:hover {
-  color: #FFDD00;
-}
-
-.classintro-2 .main {
-  margin: 60px 0px 30px;
-}
-
-.classintro-2 .main button {
+.class-content .topnav a {
   color: #4F4E4B;
 }
 
-.classintro-2 .main button:hover {
-  background-color: #FFDD00;
+.class-content .topnav a:hover {
+  background-color: #4F4E4B;
+  color: #ebcf46;
+  border-radius: 10px;
 }
 
-.classintro-2 .main ul {
-  border-radius: 20px;
+.class-content .topnav input {
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px 0 0 5px;
+  border-style: unset;
 }
 
-.classintro-2 .main li {
-  border-bottom: #E3E2DD 1px solid;
+.class-content .topnav button {
+  border-style: unset;
+  border-radius: 0 5px 5px 0;
 }
 
-.classintro-2 .main a {
+.class-content .topnav button:hover {
+  background-color: #ebcf46;
+}
+
+.class-content .main .content-left {
+  width: 60%;
+}
+
+.class-content .main .content-right {
+  width: 35%;
+}
+
+.class-content .main .content-right a {
   color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
-.classintro-2 .main a:hover {
-  color: #FFDD00;
+.class-content .main .content-right a:hover {
+  color: #BFB595;
 }
 
-.classintro-2 .main p {
-  line-height: 1.2;
+.class-content .main .content-right > h3 {
+  border-radius: 10px 10px 0 0;
+  background-color: #ebcf46;
 }
 
-.classintro-2 img {
-  width: 100px;
-  height: 80px;
+.class-content .main .content-right li:last-child {
+  border-top: 2px dotted #4F4E4B;
+  border-radius: 0 0 10px 10px;
 }
 
-.classintro-2 .pagination a {
+.class-content .main img {
+  width: 650px;
+  height: 400px;
+}
+
+.class-content .main .tag {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.class-content .main .tag a {
+  margin-right: 10px;
+  background-color: #D9C76C;
   color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  border-radius: 10px;
 }
 
-.classintro-2 .pagination a:hover {
+.class-content .main .tag a:hover {
+  background-color: #4F4E4B;
   color: #FFDD00;
 }
 
 .news .topnav {
-  background: #FFDD00;
+  background: #BFB595;
+  border-radius: 10px;
 }
 
-.news .topnav li a {
+.news .topnav a {
   color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
 }
 
-.news .topnav li a:hover {
-  color: #FFDD00;
+.news .topnav a:hover {
   background-color: #4F4E4B;
+  color: #ebcf46;
+  border-radius: 10px;
+}
+
+.news .topnav input {
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px 0 0 5px;
+  border-style: unset;
 }
 
 .news .topnav button {
-  color: #4F4E4B;
+  border-style: unset;
+  border-radius: 0 5px 5px 0;
 }
 
 .news .topnav button:hover {
-  background-color: #FFDD00;
+  background-color: #ebcf46;
 }
 
 .news img {
-  width: 100px;
+  width: 120px;
   height: 80px;
 }
 
-.news .content-left {
-  width: 700px;
-}
-
-.news .content-left .title {
+.news .content-left .title, .news .content-right .title {
   border-bottom: 2px solid #4F4E4B;
 }
 
-.news .content-left .content h3 {
+.news .content-left .content h3, .news .content-right .content h3 {
   font-size: 16px;
   color: #4F4E4B;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.news .content-left .content h3:hover {
-  color: #FFDD00;
+.news .content-left .content h3:hover, .news .content-right .content h3:hover {
+  color: #BFB595;
 }
 
-.news .content-left .content p {
+.news .content-left .content p, .news .content-right .content p {
   font-size: 14px;
+}
+
+.news .content-left {
+  width: 60%;
 }
 
 .news .content-right {
-  width: 380px;
-}
-
-.news .content-right .title {
-  border-bottom: 2px solid #4F4E4B;
-}
-
-.news .content-right .content h3 {
-  font-size: 16px;
-  color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.news .content-right .content h3:hover {
-  color: #FFDD00;
-}
-
-.news .content-right .content p {
-  font-size: 14px;
+  width: 35%;
 }
 
 .news .border-bottom {
@@ -821,58 +877,65 @@ img {
 }
 
 .news .pagination a:hover {
-  color: #FFDD00;
+  color: #ebcf46;
 }
 
 .news-content .topnav {
-  background: #FFDD00;
+  background: #BFB595;
+  border-radius: 10px;
 }
 
-.news-content .topnav li a {
+.news-content .topnav a {
   color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
 }
 
-.news-content .topnav li a:hover {
-  color: #FFDD00;
+.news-content .topnav a:hover {
   background-color: #4F4E4B;
+  color: #ebcf46;
+  border-radius: 10px;
+}
+
+.news-content .topnav input {
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px 0 0 5px;
+  border-style: unset;
 }
 
 .news-content .topnav button {
-  color: #4F4E4B;
+  border-style: unset;
+  border-radius: 0 5px 5px 0;
 }
 
 .news-content .topnav button:hover {
-  background-color: #FFDD00;
+  background-color: #ebcf46;
 }
 
 .news-content .content-left {
-  width: 700px;
+  width: 60%;
 }
 
 .news-content .content-left img {
-  width: 700px;
-  height: 500px;
-}
-
-.news-content .content-left .content h3 {
-  font-size: 16px;
-  color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.news-content .content-left .content h3:hover {
-  color: #FFDD00;
-}
-
-.news-content .content-left .content p {
-  font-size: 14px;
+  width: 650px;
+  height: 400px;
 }
 
 .news-content .content-right {
-  width: 380px;
+  width: 35%;
+}
+
+.news-content .content-right > h3 {
+  background-color: #ebcf46;
+  border-radius: 10px 10px 0 0;
+}
+
+.news-content .content-right li {
+  border-bottom: 2px dotted gray;
+}
+
+.news-content .content-right li:last-child {
+  border-radius: 0 0 10px 10px;
+  border-bottom: transparent;
 }
 
 .news-content .content-right img {
@@ -880,23 +943,14 @@ img {
   height: 80px;
 }
 
-.news-content .content-right .title {
-  border-bottom: 2px solid #4F4E4B;
-}
-
-.news-content .content-right .content h3 {
-  font-size: 16px;
+.news-content .content-right .content a {
   color: #4F4E4B;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
-.news-content .content-right .content h3:hover {
-  color: #FFDD00;
-}
-
-.news-content .content-right .content p {
-  font-size: 14px;
+.news-content .content-right .content a:hover {
+  color: #BFB595;
 }
 
 .news-content .border-bottom {
@@ -904,26 +958,51 @@ img {
 }
 
 .forum .topnav {
-  background: #FFDD00;
+  background: #BFB595;
+  border-radius: 10px 10px 0 0;
 }
 
-.forum .topnav li a {
+.forum .topnav a {
   color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
 }
 
-.forum .topnav li a:hover {
-  color: #FFDD00;
+.forum .topnav a:hover {
   background-color: #4F4E4B;
+  color: #ebcf46;
+  border-radius: 10px;
+}
+
+.forum .topnav input {
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px 0 0 5px;
+  border-style: unset;
 }
 
 .forum .topnav button {
-  color: #4F4E4B;
+  border-style: unset;
+  border-radius: 0 5px 5px 0;
 }
 
 .forum .topnav button:hover {
-  background-color: #FFDD00;
+  background-color: #ebcf46;
+}
+
+.forum .forum-main {
+  border-radius: 0 0 10px 10px;
+}
+
+.forum .forum-main img {
+  width: 100px;
+  height: 100px;
+}
+
+.forum .forum-main .icon i {
+  color: #4F4E4B;
+}
+
+.forum .forum-main .icon i:hover {
+  color: #BFB595;
 }
 
 .forum .content h3 {
@@ -934,16 +1013,11 @@ img {
 }
 
 .forum .content h3:hover {
-  color: #FFDD00;
+  color: #BFB595;
 }
 
 .forum .content p {
   font-size: 14px;
-}
-
-.forum ul li img {
-  width: 80px;
-  height: 80px;
 }
 
 .forum .border-bottom {
@@ -957,7 +1031,7 @@ img {
 }
 
 .forum .pagination a:hover {
-  color: #FFDD00;
+  color: #ebcf46;
 }
 
 .forum .write {
@@ -972,26 +1046,34 @@ img {
 }
 
 .forum-content .topnav {
-  background: #FFDD00;
+  background: #BFB595;
+  border-radius: 10px 10px 0 0;
 }
 
-.forum-content .topnav li a {
+.forum-content .topnav a {
   color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
 }
 
-.forum-content .topnav li a:hover {
-  color: #FFDD00;
+.forum-content .topnav a:hover {
   background-color: #4F4E4B;
+  color: #ebcf46;
+  border-radius: 10px;
+}
+
+.forum-content .topnav input {
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px 0 0 5px;
+  border-style: unset;
 }
 
 .forum-content .topnav button {
-  color: #4F4E4B;
+  border-style: unset;
+  border-radius: 0 5px 5px 0;
 }
 
 .forum-content .topnav button:hover {
-  background-color: #FFDD00;
+  background-color: #ebcf46;
 }
 
 .forum-content .user img {
@@ -999,16 +1081,49 @@ img {
   height: 50px;
 }
 
+.forum-content .code {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.forum-content .code p {
+  border-radius: 5px;
+}
+
+.forum-content .code a {
+  color: #4F4E4B;
+  background-color: #ebcf46;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  border-radius: 10px;
+}
+
+.forum-content .code a:hover {
+  color: #ebcf46;
+  background-color: #4F4E4B;
+}
+
+.forum-content .prise a {
+  color: #4F4E4B;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  border-radius: 10px;
+}
+
+.forum-content .prise a:hover {
+  color: #BFB595;
+}
+
 .forum-content .filter a {
   color: #4F4E4B;
-  background-color: #FFDD00;
-  border-radius: 20px;
+  background-color: #ebcf46;
+  border-radius: 10px;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
 .forum-content .filter a:hover {
-  color: #FFDD00;
+  color: #ebcf46;
   background-color: #4F4E4B;
 }
 
@@ -1021,31 +1136,36 @@ img {
   height: 50px;
 }
 
-.forum-content .leave-message .type {
+.forum-content .leave-message input {
+  font-size: 16px;
   width: 500px;
+  border-radius: 5px 0 0 5px;
+  border-style: none;
+  border: 1px solid lightgray;
 }
 
-.forum-content .leave-message .submit {
-  color: #4F4E4B;
+.forum-content .leave-message button {
+  border-style: none;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid lightgray;
 }
 
-.forum-content .leave-message .submit:hover {
-  background-color: #FFDD00;
+.forum-content .leave-message button:hover {
+  background-color: #ebcf46;
 }
 
 .forum-write .topnav {
-  background: #FFDD00;
+  background: #BFB595;
+  border-radius: 10px 10px 0 0;
 }
 
-.forum-write .topnav li a {
-  color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+.forum-write h2, .forum-write .forum-write-main {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.forum-write .topnav li a:hover {
-  color: #FFDD00;
-  background-color: #4F4E4B;
+.forum-write h2 {
+  margin-top: 75px;
 }
 
 .forum-write .user img {
@@ -1053,20 +1173,26 @@ img {
   height: 50px;
 }
 
-.forum-write form .article-title {
-  width: 500px;
+.forum-write form .article-title, .forum-write form textarea {
+  width: 100%;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid lightgray;
 }
 
 .forum-write form textarea {
-  width: 1050px;
-  height: 500px;
+  height: 300px;
 }
 
 .forum-write form .submit {
   color: #4F4E4B;
+  background-color: #ebcf46;
+  border-style: none;
+  border-radius: 10px;
 }
 
 .forum-write form .submit:hover {
-  background-color: #FFDD00;
+  background-color: #4F4E4B;
+  color: #ebcf46;
 }
 /*# sourceMappingURL=all.css.map */
