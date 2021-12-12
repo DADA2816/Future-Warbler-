@@ -1205,23 +1205,28 @@ img {
   width: 100%;
 }
 
+.trade .product-content tr {
+  padding: 10px;
+}
+
+.trade .chart img {
+  margin-top: 60px;
+}
+
 .trade .chart-filter {
   z-index: 99;
-  position: fixed;
+  position: absolute;
+  top: 450px;
+  left: 302px;
 }
 
 .trade .chart-filter > li > a {
   width: 165px;
   color: #4F4E4B;
-  background-color: lightsalmon;
+  background-color: white;
 }
 
-.trade .chart-filter > li > a:active {
-  background: #4F4E4B;
-  color: #ebcf46;
-}
-
-.trade .chart-filter > li > a:hover {
+.trade .chart-filter > li > a:hover, .trade .chart-filter > li > a:active {
   background: #4F4E4B;
   color: #ebcf46;
 }
