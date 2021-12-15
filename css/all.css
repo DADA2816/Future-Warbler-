@@ -308,6 +308,12 @@ table {
           align-items: center;
 }
 
+.aife {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .fwb {
   font-weight: bold;
 }
@@ -621,11 +627,6 @@ img {
           transform: rotate(-30deg);
 }
 
-.class .topnav {
-  background: #BFB595;
-  border-radius: 10px;
-}
-
 .class .topnav a {
   color: #4F4E4B;
 }
@@ -638,9 +639,9 @@ img {
 
 .class .topnav input {
   font-size: 16px;
-  width: 300px;
+  width: 100%;
   border-radius: 5px 0 0 5px;
-  border-style: unset;
+  border-style: none;
 }
 
 .class .topnav button {
@@ -650,6 +651,11 @@ img {
 
 .class .topnav button:hover {
   background-color: #ebcf46;
+}
+
+.class form {
+  width: 30%;
+  float: right;
 }
 
 .class .main {
@@ -683,15 +689,13 @@ img {
 }
 
 .class .main .go-class {
-  background-color: #ebcf46;
-  color: #4F4E4B;
+  color: #ebcf46;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
-  border-radius: 40px;
+  float: right;
 }
 
 .class .main .go-class:hover {
-  background-color: #4F4E4B;
   color: #FFDD00;
 }
 
@@ -703,7 +707,7 @@ img {
 
 .class .content {
   border-radius: 0px 0px 20px 20px;
-  height: 350px;
+  height: 300px;
 }
 
 .class .content p {
@@ -720,11 +724,6 @@ img {
   color: #D9C76C;
 }
 
-.class-content .topnav {
-  background: #BFB595;
-  border-radius: 10px;
-}
-
 .class-content .topnav a {
   color: #4F4E4B;
 }
@@ -735,9 +734,13 @@ img {
   border-radius: 10px;
 }
 
+.class-content .topnav form {
+  width: 100%;
+}
+
 .class-content .topnav input {
   font-size: 16px;
-  width: 300px;
+  width: 100%;
   border-radius: 5px 0 0 5px;
   border-style: unset;
 }
@@ -753,6 +756,20 @@ img {
 
 .class-content .main .content-left {
   width: 60%;
+  border-radius: 10px;
+}
+
+.class-content .main .content-left img {
+  width: 600px;
+  height: 400px;
+}
+
+.class-content .main .content-left .bottom-nav a {
+  color: #4F4E4B;
+}
+
+.class-content .main .content-left .bottom-nav a:hover {
+  color: #ebcf46;
 }
 
 .class-content .main .content-right {
@@ -775,13 +792,16 @@ img {
 }
 
 .class-content .main .content-right li:last-child {
-  border-top: 2px dotted #4F4E4B;
   border-radius: 0 0 10px 10px;
 }
 
-.class-content .main img {
-  width: 650px;
-  height: 400px;
+.class-content .main .content-right img {
+  width: 100px;
+  height: 80px;
+}
+
+.class-content .main .border-bottom {
+  border-bottom: 1px solid darkgray;
 }
 
 .class-content .main .tag {
@@ -820,7 +840,7 @@ img {
 
 .news .topnav input {
   font-size: 16px;
-  width: 300px;
+  width: 100%;
   border-radius: 5px 0 0 5px;
   border-style: unset;
 }
@@ -839,8 +859,8 @@ img {
   height: 80px;
 }
 
-.news .content-left .title, .news .content-right .title {
-  border-bottom: 2px solid #4F4E4B;
+.news .content-left, .news .content-right {
+  border-radius: 10px;
 }
 
 .news .content-left .content h3, .news .content-right .content h3 {
@@ -862,8 +882,22 @@ img {
   width: 60%;
 }
 
+.news .content-left > h3 {
+  background-color: #ebcf46;
+  border-radius: 10px 10px 0 0;
+}
+
 .news .content-right {
   width: 35%;
+}
+
+.news .content-right > h3 {
+  background-color: #ebcf46;
+  border-radius: 10px 10px 0 0;
+}
+
+.news .content-right li:last-child {
+  border-radius: 0 0 10px 10px;
 }
 
 .news .border-bottom {
@@ -897,13 +931,13 @@ img {
 
 .news-content .topnav input {
   font-size: 16px;
-  width: 300px;
+  width: 100%;
   border-radius: 5px 0 0 5px;
-  border-style: unset;
+  border-style: none;
 }
 
 .news-content .topnav button {
-  border-style: unset;
+  border-style: none;
   border-radius: 0 5px 5px 0;
 }
 
@@ -913,10 +947,11 @@ img {
 
 .news-content .content-left {
   width: 60%;
+  border-radius: 10px;
 }
 
 .news-content .content-left img {
-  width: 650px;
+  width: 600px;
   height: 400px;
 }
 
@@ -959,7 +994,7 @@ img {
 
 .forum .topnav {
   background: #BFB595;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
 }
 
 .forum .topnav a {
@@ -974,7 +1009,7 @@ img {
 
 .forum .topnav input {
   font-size: 16px;
-  width: 300px;
+  width: 100%;
   border-radius: 5px 0 0 5px;
   border-style: unset;
 }
@@ -989,7 +1024,7 @@ img {
 }
 
 .forum .forum-main {
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
 }
 
 .forum .forum-main img {
@@ -1047,7 +1082,7 @@ img {
 
 .forum-content .topnav {
   background: #BFB595;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
 }
 
 .forum-content .topnav a {
@@ -1062,7 +1097,7 @@ img {
 
 .forum-content .topnav input {
   font-size: 16px;
-  width: 300px;
+  width: 100%;
   border-radius: 5px 0 0 5px;
   border-style: unset;
 }
@@ -1074,6 +1109,10 @@ img {
 
 .forum-content .topnav button:hover {
   background-color: #ebcf46;
+}
+
+.forum-content .article {
+  border-radius: 10px 10px 0 0;
 }
 
 .forum-content .user img {
@@ -1131,6 +1170,10 @@ img {
   border-bottom: 1px solid darkgray;
 }
 
+.forum-content .message {
+  border-radius: 0 0 10px 10px;
+}
+
 .forum-content .leave-message img {
   width: 50px;
   height: 50px;
@@ -1138,13 +1181,14 @@ img {
 
 .forum-content .leave-message input {
   font-size: 16px;
-  width: 500px;
+  width: 100%;
   border-radius: 5px 0 0 5px;
   border-style: none;
   border: 1px solid lightgray;
 }
 
 .forum-content .leave-message button {
+  width: 10%;
   border-style: none;
   border-radius: 0 5px 5px 0;
   border: 1px solid lightgray;
@@ -1194,62 +1238,5 @@ img {
 .forum-write form .submit:hover {
   background-color: #4F4E4B;
   color: #ebcf46;
-}
-
-.trade .product-title {
-  background: #BFB595;
-  border-radius: 10px 10px 0 0;
-}
-
-.trade .product-content {
-  width: 100%;
-}
-
-.trade .product-content tr {
-  padding: 10px;
-}
-
-.trade .chart img {
-  margin-top: 60px;
-}
-
-.trade .chart-filter {
-  z-index: 99;
-  position: absolute;
-  top: 450px;
-  left: 302px;
-}
-
-.trade .chart-filter > li > a {
-  width: 165px;
-  color: #4F4E4B;
-  background-color: white;
-}
-
-.trade .chart-filter > li > a:hover, .trade .chart-filter > li > a:active {
-  background: #4F4E4B;
-  color: #ebcf46;
-}
-
-.trade .chart-filter > li li {
-  color: #000;
-}
-
-.trade .chart-filter ul ul {
-  display: none;
-}
-
-.trade .chart-filter ul > li > a {
-  color: #4F4E4B;
-}
-
-.trade .chart-filter ul > li > a:hover {
-  color: #BFB595;
-}
-
-.trade img {
-  z-index: 1;
-  width: 100%;
-  height: 400px;
 }
 /*# sourceMappingURL=all.css.map */

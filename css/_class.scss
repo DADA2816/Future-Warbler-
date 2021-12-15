@@ -1,7 +1,5 @@
 .class{
     .topnav{
-        background: #BFB595;
-        border-radius: 10px;
         a{
             color: $text_color;
             &:hover{
@@ -12,9 +10,9 @@
         }
         input{
             font-size: 16px;
-            width: 300px;
+            width: 100%;
             border-radius: 5px 0 0 5px;
-            border-style: unset;
+            border-style: none;
         }
         button{
             border-style: unset;
@@ -23,6 +21,10 @@
                 background-color: #ebcf46;
             }
         }
+    }
+    form{
+        width: 30%;
+        float: right;
     }
     .main{
         margin: 20px 0 0;
@@ -46,12 +48,10 @@
             }
         }
         .go-class{
-            background-color: #ebcf46;
-            color: $text_color;
+            color: #ebcf46;
             transition: 0.5s all;
-            border-radius: 40px;
+            float: right;
             &:hover{
-                background-color: $text_color;
                 color: $primary_color;
             }
         }
@@ -63,7 +63,7 @@
     }
     .content{
         border-radius: 0px 0px 20px 20px;
-        height: 350px;
+        height: 300px;
         p{
             height: 100px;
         }

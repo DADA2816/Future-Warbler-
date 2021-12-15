@@ -1,9 +1,14 @@
 $(document).ready(function(){
-    $('.chart-filter>li>a').click(function (e) { 
-      e.preventDefault();
-      $(this).toggleClass('active');
-      $(this).parent().siblings().find('a').removeClass('active');
-      $(this).parent().find('ul').slideToggle();
-      $(this).parent().siblings().find('ul').slideUp();
-    });
+  $('.font-s').click(function (e) { 
+    $('.news-content .article p').css('font-size','14px');
+  });
+
+  $('.font-m').click(function (e) { 
+    $('.news-content .article p').css('font-size','18px');
+  });
+
+  $('.font-b').click(function (e) { 
+    $('.news-content .article p').css('font-size','20px');
+  });
+
 });

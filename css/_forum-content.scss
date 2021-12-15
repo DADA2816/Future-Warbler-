@@ -1,7 +1,7 @@
 .forum-content{
     .topnav{
         background: #BFB595;
-        border-radius: 10px 10px 0 0 ;
+        border-radius: 10px;
         a{
             color: $text_color;
             &:hover{
@@ -12,7 +12,7 @@
         }
         input{
             font-size: 16px;
-            width: 300px;
+            width: 100%;
             border-radius: 5px 0 0 5px;
             border-style: unset;
         }
@@ -23,6 +23,9 @@
                 background-color: #ebcf46;
             }
         }
+    }
+    .article{
+        border-radius: 10px 10px 0 0 ;
     }
     .user img{
         width: 50px;
@@ -70,6 +73,9 @@
     .border-bottom{
         border-bottom: 1px solid darkgray;
     }
+    .message{
+        border-radius: 0 0 10px 10px;
+    }
     .leave-message{
         img{
             width: 50px;
@@ -77,12 +83,13 @@
         }
         input{
             font-size: 16px;
-            width: 500px;
+            width: 100%;
             border-radius: 5px 0 0 5px;
             border-style: none;
             border: 1px solid lightgray;
         }
         button{
+            width: 10%;
             border-style: none;
             border-radius: 0 5px 5px 0;
             border: 1px solid lightgray;

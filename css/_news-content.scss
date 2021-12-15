@@ -12,12 +12,12 @@
         }
         input{
             font-size: 16px;
-            width: 300px;
+            width: 100%;
             border-radius: 5px 0 0 5px;
-            border-style: unset;
+            border-style: none;
         }
         button{
-            border-style: unset;
+            border-style: none;
             border-radius: 0 5px 5px 0;
             &:hover{
                 background-color: #ebcf46;
@@ -26,8 +26,9 @@
     }
     .content-left{
         width: 60%;
+        border-radius: 10px;
         img{
-            width: 650px;
+            width: 600px;
             height: 400px;
         }
     }
