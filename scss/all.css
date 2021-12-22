@@ -1383,10 +1383,6 @@ img {
   color: #FFDD00;
 }
 
-.class__content img {
-  margin: 0 auto 40px;
-}
-
 .class__content .near--page__btn {
   background: #FFDD00;
   text-align: center;
@@ -1435,7 +1431,7 @@ img {
 
 .news img {
   width: 120px;
-  height: 80px;
+  height: 100px;
 }
 
 .news .content-left, .news .content-right {
@@ -1539,7 +1535,6 @@ img {
 }
 
 .news-content .content-left img {
-  width: 600px;
   height: 400px;
 }
 
