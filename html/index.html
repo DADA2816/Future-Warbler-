@@ -20,14 +20,14 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <div class="wrap d-flex m0-a">
+    <div class="wrap gray-bg d-flex m0-a">
         <div class="side">
-            <h1 class="fz-xl fwb">F<span class="bright">u</span>ture <br> &nbsp;&nbsp;Warbl<span class="bright">e</span>r </h1>
+            <h1 class="fz-xl fwb">F<span class="bright">u</span>tures <br> &nbsp;&nbsp;Warbl<span class="bright">e</span>r </h1>
             <ul class="menu">
-                <li class="chosed main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="index.html"><i class="fas fa-home mr-4"></i>首頁</a></li>
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="trade.html"><i class="fas fa-university mr-4"></i>模擬交易所</a></li>
+                <li class="chosed main--menu pt-3 pr-5 pb-3 pl-9  "><a href="index.html"><i class="fas fa-home mr-4"></i>首頁</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="trade.html"><i class="fas fa-university mr-4"></i>模擬交易所</a></li>
                 <li class="drop--menu">
-                    <a href="" class="main--menu  pt-2 pb-2 pl-9 mb-3">
+                    <a href="" class="main--menu  pt-3 pb-3 pl-9  ">
                         <i class="fas fa-chalkboard-teacher mr-4"></i>期貨小教室<i class="fas fa-chevron-down  ml-6 fz-s"></i>
                     </a>
                     <ul class=" d-none">
@@ -35,20 +35,30 @@
                         <li class="sub--menu"><a href="">期貨基本指標</a></li>
                     </ul>
                 </li>
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href=""><i class="fas fa-robot mr-4"></i>智能機器人顧問</a></li>
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="news.html"><i class="fas fa-newspaper mr-4"></i>新聞</a></li>
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="forum.html"><i class="fas fa-comment-alt mr-4"></i>討論版</a></li>
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="personal-page.html"><i class="fas fa-user-alt mr-4"></i>個人頁面</a></li>
+                <li class="drop--menu">
+                    <a href="" class="main--menu  pt-3 pb-3 pl-9 mb-3">
+                        <i class="fas fa-chalkboard-teacher mr-4"></i>智能機器人顧問<i class="fas fa-chevron-down  ml-6 fz-s"></i>
+                    </a>
+                    <ul class=" d-none">
+                        <li class="sub--menu"><a href="robot-normal.html">一般交易系統</a></li>
+                        <li class="sub--menu"><a href="robot-intelligent.html">智能交易系統</a></li>
+                    </ul>
+                </li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="news.html"><i class="fas fa-newspaper mr-4"></i>新聞</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="forum.html"><i class="fas fa-comment-alt mr-4"></i>討論版</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="personal-page.html"><i class="fas fa-user-alt mr-4"></i>個人頁面</a></li>
             </ul>
+            <div class="circle"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
         </div>
-        <div class="container">
-            <ul class="header--button d-flex jcfe  text-shadow">
-                <li><a href="login.html" class="header__login--button dark-gray  mr-2 tac br-s">登入</a></li>
-                <li><a href="register.html" class="header__register--button dark-gray  mr-2 tac br-s">註冊</a></li>
+        <div class="container pb-4">
+            <ul class="header d-flex jcfe card-shadow text-shadow p-3">
+                <li><a href="login.html" class="header__login--button dark-gray  mr-2 tac br-s fwb"><i class="fas fa-sign-in-alt mr-3"></i>登入</a></li>
             </ul>
-            <ul class="index_content mt-7 w-100">
-                <li class="fl second-white-bg w-60 br-m mr-3pct card-shadow pt-4 pb-6 pl-8 pr-8">
-                    <div class="d-flex jcsb aic">
+            <div class="index mt-7 w-100 pl-12 pr-10 b-4">
+                <div class="fl white-bg w-60 br-m mr-4pct card-shadow">
+                    <div class="d-flex jcsb aic b-bottom p-5">
                         <h2><i class="fas fa-list mr-2"></i>商品行情表</h2>
                         <a class="more dark-gray" href="">more...</a>
                     </div>
@@ -99,96 +109,92 @@
                             <td>2021/12/18 18:12</td>
                         </tr>
                     </table>
-                </li>
-                <li class="fl second-white-bg w-35 br-m pb-4">
-                    <div class="chart--title p-4 mb-4 white-bg d-flex jcsb aic">
-                        <h2><i class="fas fa-chart-line mr-2"></i>大盤走勢圖</h2>
-                        <a class="more dark-gray" href="">more...</a>
-                    </div>
-                    <!--到時候抓照片可能會條寬度-->
-                    <img src="../img/假圖-大盤走勢圖.png" alt="走勢圖" class="m0-a w-80 h-60">
-                </li>
-                <li class="fl second-white-bg w-60 br-m mr-4pct pb-4 mt-6 ">
-                    <div class="news--title p-4 mb-4 white-bg d-flex jcsb aic">
+                </div>
+                <div class="fl go_classroom--content white-bg w-35 br-m  card-shadow p-5">
+                    
+                    <img src="../img/前往小教室.png" alt="前往小教室">
+                </div>
+                <div class="fl white-bg w-60 br-m mr-4pct card-shadow pb-4 mt-6 ">
+                    <div class=" p-5  d-flex jcsb aic">
                         <h2><i class="fas fa-newspaper mr-2"></i>新聞快訊</h2>
                         <a class="more dark-gray" href="">more...</a>
                     </div>
                     <ul class="news--content">
-                        <li><a href="" class="d-flex jcsb p-5">
+                        <li><a href="" class="d-flex jcsb p-5 b-bottom b-top">
                             <img src="../img/假圖-新聞圖片.jpg" alt="新聞圖片" class="w-20 mr-4">
                             <div class="news--text">
-                                <h3 class="fz-s green fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <h3 class="fz-s dark-gray fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                                 <p class="fz-s dark-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra ultricies dui massa ultricies neque. Quam nec tempus tellus nulla congue aliquet ...</p>
                             </div>
                         </a></li>
-                        <li><a href="" class="d-flex jcsb p-5">
+                        <li><a href="" class="d-flex jcsb p-5 b-bottom">
                             <img src="../img/假圖-新聞圖片.jpg" alt="新聞圖片" class="w-20 mr-4">
                             <div class="news--text">
-                                <h3 class="fz-s green fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <h3 class="fz-s dark-gray fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                                 <p class="fz-s dark-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra ultricies dui massa ultricies neque. Quam nec tempus tellus nulla congue aliquet ...</p>
                             </div>
                         </a></li>
-                        <li><a href="" class="d-flex jcsb p-5">
+                        <li><a href="" class="d-flex jcsb p-5 b-bottom">
                             <img src="../img/假圖-新聞圖片.jpg" alt="新聞圖片" class="w-20 mr-4">
                             <div class="news--text">
-                                <h3 class="fz-s green fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <h3 class="fz-s dark-gray fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                                 <p class="fz-s dark-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra ultricies dui massa ultricies neque. Quam nec tempus tellus nulla congue aliquet ...</p>
                             </div>
                         </a></li>
-                        <li><a href="" class="d-flex jcsb p-5">
+                        <li><a href="" class="d-flex jcsb p-5 b-bottom">
                             <img src="../img/假圖-新聞圖片.jpg" alt="新聞圖片" class="w-20 mr-4">
                             <div class="news--text">
-                                <h3 class="fz-s green fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <h3 class="fz-s dark-gray fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                                 <p class="fz-s dark-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra ultricies dui massa ultricies neque. Quam nec tempus tellus nulla congue aliquet ...</p>
                             </div>
                         </a></li>
                     </ul>
-                </li>
-                <li class="fl second-white-bg w-35 br-m mt-6 pb-4">
-                    <div class="discussing--title p-4 mb-4 white-bg d-flex jcsb aic">
+                </div>
+                <dic class="fl white-bg w-35 br-m mt-6 card-shadow pb-4">
+                    <div class=" p-5 d-flex jcsb aic">
                         <h2><i class="fas fa-comment-alt mr-2"></i>討論版</h2>
                         <a class="more dark-gray" href="">more...</a>
                     </div>
                     <ul class="discussing--content">
-                        <li><a href="" class="d-flex jcsb p-5 pb-11">
+                        <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom b-top">
                             <div class="Avatars">
                                 <img src="../img/大頭貼1.jpg" alt="大頭貼1">
                             </div>
                             <div class="discussing--text">
-                                <h3 class="green fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                                 <p class="fz-s dark-gray">-Brian | 2021.11.28 16:20 | <i class="fas fa-comment-alt"></i> 5</p>
                             </div>
                         </a></li>
-                        <li><a href="" class="d-flex jcsb p-5 pb-11">
+                        <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom">
                             <div class="Avatars">
                                 <img src="../img/大頭貼2.jpg" alt="大頭貼2">
                             </div>
                             <div class="discussing--text">
-                                <h3 class="green fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                                 <p class="fz-s dark-gray">-Lora | 2021.11.25 11:30 | <i class="fas fa-comment-alt"></i> 10</p>
                             </div>
                         </a></li>
-                        <li><a href="" class="d-flex jcsb p-5 pb-11">
+                        <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom">
                             <div class="Avatars">
                                 <img src="../img/大頭貼3.jpg" alt="大頭貼3">
                             </div>
                             <div class="discussing--text">
-                                <h3 class="green fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                                 <p class="fz-s dark-gray">-Alex | 2021.11.20 20:40 | <i class="fas fa-comment-alt"></i> 8</p>
                             </div>
                         </a></li>
-                        <li><a href="" class="d-flex jcsb p-5 pb-11">
+                        <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom">
                             <div class="Avatars">
                                 <img src="../img/大頭貼4.jpg" alt="大頭貼4">
                             </div>
                             <div class="discussing--text">
-                                <h3 class="green fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                                 <p class="fz-s dark-gray">-Linda | 2021.11.01 00:05 | <i class="fas fa-comment-alt"></i> 7</p>
                             </div>
                         </a></li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
     <a class="robot" href="#">

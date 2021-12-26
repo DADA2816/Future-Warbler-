@@ -23,28 +23,39 @@
 <body>
     <div class="wrap d-flex m0-a">
         <div class="side">
-            <h1 class="fz-xl fwb">F<span class="bright">u</span>ture <br> &nbsp;&nbsp;Warbl<span class="bright">e</span>r </h1>
+            <h1 class="fz-xl fwb">F<span class="bright">u</span>tures <br> &nbsp;&nbsp;Warbl<span class="bright">e</span>r </h1>
             <ul class="menu">
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="index.html"><i class="fas fa-home mr-4"></i>首頁</a></li>
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3 chosed"><a href="trade.html"><i class="fas fa-university mr-4"></i>模擬交易所</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="index.html"><i class="fas fa-home mr-4"></i>首頁</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9 chosed "><a href="trade.html"><i class="fas fa-university mr-4"></i>模擬交易所</a></li>
                 <li class="drop--menu">
-                    <a href="" class="main--menu  pt-2 pb-2 pl-9 mb-3">
-                        <i class="fas fa-chalkboard-teacher mr-4 "></i>期貨小教室<i class="fas fa-chevron-down  ml-6 fz-s"></i>
+                    <a href="" class="main--menu  pt-3 pb-3 pl-9  ">
+                        <i class="fas fa-chalkboard-teacher mr-4"></i>期貨小教室<i class="fas fa-chevron-down  ml-6 fz-s"></i>
                     </a>
                     <ul class=" d-none">
                         <li class="sub--menu"><a href="class.html">期貨基本知識</a></li>
-                        <li class="sub--menu"><a href="">期貨基本知識</a></li>
+                        <li class="sub--menu"><a href="">期貨基本指標</a></li>
                     </ul>
                 </li>
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href=""><i class="fas fa-robot mr-4"></i>智能機器人顧問</a></li>
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="news.html"><i class="fas fa-newspaper mr-4"></i>新聞</a></li>
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="forum.html"><i class="fas fa-comment-alt mr-4"></i>討論版</a></li>
-                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="personal-page.html"><i class="fas fa-user-alt mr-4"></i>個人頁面</a></li>
+                <li class="drop--menu">
+                    <a href="" class="main--menu  pt-3 pb-3 pl-9 mb-3">
+                        <i class="fas fa-chalkboard-teacher mr-4"></i>智能機器人顧問<i class="fas fa-chevron-down  ml-6 fz-s"></i>
+                    </a>
+                    <ul class=" d-none">
+                        <li class="sub--menu"><a href="robot-normal.html">一般交易系統</a></li>
+                        <li class="sub--menu"><a href="robot-intelligent.html">智能交易系統</a></li>
+                    </ul>
+                </li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="news.html"><i class="fas fa-newspaper mr-4"></i>新聞</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="forum.html"><i class="fas fa-comment-alt mr-4"></i>討論版</a></li>
+                <li class="main--menu pt-3 pr-5 pb-3 pl-9  "><a href="personal-page.html"><i class="fas fa-user-alt mr-4"></i>個人頁面</a></li>
             </ul>
+            <div class="circle"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
         </div>
-        <div class="container">
-            <ul class="header--button d-flex jcfe aic">
-                <li class="fz-s mr-2 fwbr d-flex loginned_title aic">
+        <div class="container pb-4">
+            <ul class=" header  d-flex jcfe aic p-3  text-shadow ">
+                <li class="fz-s mr-2 fwbr d-flex loginned_title aic ">
                     <div class="loginned_photo mr-2">
                         <img src="../img/會員大頭貼.jpg" alt="會員大頭貼">
                     </div>
@@ -52,139 +63,164 @@
                 </li>
                 <li><a href="#" class="header__logout--button dark-gray  mr-2 tac br-s fwb">登出</a></li>
             </ul>
-            <ul class="trade__content mt-4 w-100">
-                <li class="fl second-white-bg w-100 br-m  card-shadow ">
+            <ul class="trade__content w-100 mt-7  pl-12 pr-10 b-4 ">
+                <li class="fl white-bg w-100 br-m  card-shadow ">
                     <div class="d-flex jcsb aic p-4 pl-8 pr-8 b-bottom ">
-                        <h2><i class="fas fa-list mr-3"></i>商品列表</h2>
-                        <form action="#" class="d-flex">
-                            <input type="search" name="record" id="record" placeholder="search here..." class="search_input b-n pt-2 pb-2 pl-4 pr-3  box-shadow">
-                            <button class="search_btn b-n pt-2 pb-2 pl-3 pr-3  box-shadow"><i class="fas fa-search fz-s"></i></button>
-                        </form>            
+                        <h2><i class="fas fa-list mr-3"></i>商品列表</h2>           
                     </div>
-                    <div class="trade--productList pb-4 p-2 h-40">
-                        <table class="w-100 tac trade--table mb-4 ">
-                            <tr class="fwb">
-                                <th>序號</th>
-                                <th>商品代號</th>
-                                <th>商品名稱</th>
-                                <th>月</th>
-                                <th>漲跌</th>
-                                <th>漲跌幅</th>
-                                <th>時間</th>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>1</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>2</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>3</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>4</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>5</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>6</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>7</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>8</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>9</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>10</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>11</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                            <tr class="trade--table__item">
-                                <td>12</td>
-                                <td>FITX</td>
-                                <td>台指期</td>
-                                <td>3月</td>
-                                <td>+3.12</td>
-                                <td>+6.12</td>
-                                <td>2021/12/18 18:12</td>
-                            </tr>
-                        </table>
-                        
+                    <div class="d-flex">
+                        <div class="trade--productList pb-4 p-2 h-40 w-60">
+                            <table class="w-100 tac trade--table mb-4 ">
+                                <tr class="fwb">
+                                    <th>序號</th>
+                                    <th>商品代號</th>
+                                    <th>商品名稱</th>
+                                    <th>月</th>
+                                    <th>漲跌</th>
+                                    <th>漲跌幅</th>
+                                    <th>時間</th>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>1</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>2</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>3</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>4</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>5</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>6</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>7</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>8</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>9</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>10</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>11</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                                <tr class="trade--table__item">
+                                    <td>12</td>
+                                    <td>FITX</td>
+                                    <td>台指期</td>
+                                    <td>3月</td>
+                                    <td>+3.12</td>
+                                    <td>+6.12</td>
+                                    <td>2021/12/18 18:12</td>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                        <div class="w-40 p-2 pl-5">
+                            <select class="trade--option p-1 w-25 mt-2   br-s p-2 d-block" id="product">
+                                <option value="" class="p-2" >商品</option>
+                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
+                            </select>
+                            <select class="trade--option p-1 w-25 mt-2   br-s p-2 d-block" id="product">
+                                <option value="" class="p-2" >時間週期</option>
+                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
+                            </select>
+                            <select class="trade--option p-1 w-25 mt-2 mr-2  br-s p-2 d-inline-bloc" id="product">
+                                <option value="" class="p-2" >開始時間</option>
+                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
+                            </select>
+                            <select class="trade--option p-1 w-25 mt-2   br-s p-2 d-inline-block" id="product">
+                                <option value="" class="p-2" >結束時間</option>
+                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
+                            </select>
+                            <select class="trade--option p-1 w-25 mt-2   br-s p-2 d-block" id="product">
+                                <option value="" class="p-2" >副圖指標1</option>
+                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
+                            </select>
+                            <select class="trade--option p-1 w-25 mt-2   br-s p-2 d-block" id="product">
+                                <option value="" class="p-2" >副圖指標2</option>
+                                <option value="台指期"  class=" p-2 ">(FITX)台指期</option>
+                            </select>
+                            
+                        </div>
                     </div>
                 </li>
-                <li class="fl second-white-bg w-75 br-m  card-shadow mt-6 mr-4pct pt-4 pb-6 pl-8 pr-8">
+                <li class="fl white-bg w-75 br-m  card-shadow mt-6 mr-4pct pt-4 pb-6 pl-8 pr-8">
                     <h2><i class="fas fa-list mr-3"></i>技術分析</h2>
                     <div class="d-flex aic jcsb  mt-3">
                         <h3 class="fwb fz-m">小那斯達克 (MNQ)</h3>
@@ -251,7 +287,7 @@
                     </div>
                     <!-- TradingView Widget END -->
                 </li>  
-                <li class="fl second-white-bg w-21 br-m card-shadow mt-6 pt-4 pb-6 pl-8 pr-8">
+                <li class="fl white-bg w-21 br-m card-shadow mt-6 pt-4 pb-6 pl-8 pr-8">
                     <h2><i class="fas fa-cash-register mr-3"></i>下單</h2>
                     <form action="" class="mt-3">
                         <ul>

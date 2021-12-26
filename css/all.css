@@ -61,6 +61,10 @@ table {
   width: 21%;
 }
 
+.w-25 {
+  width: 25%;
+}
+
 .w-30 {
   width: 30%;
 }
@@ -409,8 +413,16 @@ table {
   padding-top: 50px;
 }
 
+.pr-10 {
+  padding-right: 50px;
+}
+
 .pb-11 {
   padding-bottom: 55px;
+}
+
+.pl-12 {
+  padding-left: 60px;
 }
 
 .pb-21 {
@@ -526,6 +538,10 @@ table {
   font-size: 14px;
 }
 
+.fz-xm {
+  font-size: 18px;
+}
+
 .fz-m {
   font-size: 20px;
 }
@@ -571,7 +587,11 @@ table {
 }
 
 .dark-gray {
-  color: #4F4E4B;
+  color: #272726;
+}
+
+.dark-gray-bg {
+  background: #272726;
 }
 
 .white {
@@ -993,7 +1013,7 @@ body {
 }
 
 html {
-  background: #EFEFEF;
+  background: lavender;
 }
 
 a {
@@ -1005,9 +1025,10 @@ img {
 }
 
 .wrap {
-  max-width: 1536px;
+  max-width: 1920px;
   color: #4F4E4B;
   z-index: 10;
+  background: lavender;
 }
 
 .side {
@@ -1018,7 +1039,7 @@ img {
 }
 
 .side h1 {
-  padding: 17px 0px 54px 38px;
+  margin: 10px 0px 30px 38px;
   color: #FAFAFA;
 }
 
@@ -1048,22 +1069,72 @@ img {
 
 .side .menu .sub--menu {
   padding: 10px 25px 10px 45px;
-  margin-bottom: 15px;
 }
 
 .side .menu .sub--menu:hover {
   background: #0F2E4F;
 }
 
+.side .circle {
+  background: #f1d328;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: -20%;
+  z-index: 9;
+}
+
+.side .circle2 {
+  background: rgba(67, 152, 238, 0.78);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  z-index: 10;
+}
+
+.side .circle3 {
+  background: #f16828;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: 8;
+}
+
 .container {
   width: 85%;
-  padding: 15px 51px 20px 61px;
   margin-left: 15%;
 }
 
+.container .header {
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.container .header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  z-index: -1;
+  margin: -30px;
+}
+
 .header__login--button, .header__register--button, .header__logout--button {
-  background: #FAFAFA;
-  padding: 6px 13px;
+  background: #fff;
+  padding: 7px 13px;
 }
 
 .header__login--button:hover, .header__register--button:hover, .header__logout--button:hover {
@@ -1107,7 +1178,7 @@ img {
   border-radius: 50%;
 }
 
-.index_content .more {
+.index .more {
   background: #FFDD00;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
@@ -1115,59 +1186,48 @@ img {
   padding: 7px 12px;
 }
 
-.index_content .more:hover {
+.index .more:hover {
   color: #FAFAFA;
   background: #1C383E;
 }
 
-.index_content .product--title {
-  border-radius: 10px 10px 0 0;
-}
-
-.index_content .product--content th {
+.index .product--content th {
   width: 120px;
   padding: 12px 5px;
 }
 
-.index_content .product--content td {
+.index .product--content td {
   padding: 12px 5px;
 }
 
-.index_content .chart--title {
-  border-radius: 10px 10px 0 0;
+.index .go_classroom--content img {
+  width: 150px;
+  height: 150px;
 }
 
-.index_content .news--title {
-  border-radius: 10px 10px 0 0;
+.index .news--content li:hover {
+  background: #f3f2f2;
 }
 
-.index_content .news--content li a {
-  border-bottom: #E3E2DD 1px solid;
+.index .discussing--content li:hover {
+  background: #f3f2f2;
 }
 
-.index_content .discussing--title {
-  border-radius: 10px 10px 0 0;
-}
-
-.index_content .discussing--content li a {
-  border-bottom: #E3E2DD 1px solid;
-}
-
-.index_content .discussing--content li a .Avatars {
+.index .discussing--content li a .Avatars {
   position: relative;
   width: 20%;
   /* 固定寬度 */
   margin-right: 22px;
 }
 
-.index_content .discussing--content li a .Avatars::after {
+.index .discussing--content li a .Avatars::after {
   content: "";
   display: block;
   padding-bottom: 100%;
   /*padding取決於寬度，這裡設定padding-bottom: 100%就可以得到正方形*/
 }
 
-.index_content .discussing--content li a .Avatars img {
+.index .discussing--content li a .Avatars img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1183,12 +1243,12 @@ img {
      object-position: center;
 }
 
-.index_content .trade--table th, .index_content .trade--table td {
+.index .trade--table th, .index .trade--table td {
   padding: 15px 10px;
 }
 
-.index_content .trade--table .trade--table__item:hover {
-  background: #faf6bd;
+.index .trade--table .trade--table__item:hover {
+  background: #f3f2f2;
 }
 
 .robot {
@@ -1232,44 +1292,91 @@ img {
 .login {
   font-family: Arial, Helvetica, sans-serif;
   height: 722px;
-}
-
-.login_title {
   background-color: rgba(9, 40, 66, 0.6);
   background-blend-mode: multiply;
-  background-image: url(../img/封面背景.jpg);
+  background-image: url(../img/登入背景.jpg);
   background-size: cover;
   background-position: center left;
 }
 
+.login_form {
+  background: rgba(238, 232, 232, 0.8);
+  position: relative;
+  overflow: hidden;
+  border-top: #FFDD00 solid 10px;
+}
+
+.login_form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  z-index: -1;
+  margin: -30px;
+}
+
+.login_form .back_btn {
+  background: #1C383E;
+}
+
 .login_form .back_btn:hover {
-  background: #c7c7c7;
-  color: #FAFAFA;
+  background: #214952;
 }
 
 .login_form .login_btn:hover {
   background: #fffb00;
-  color: #1C383E;
 }
 
 .login_form .go_register:hover {
-  color: #FFDD00;
+  color: #ff0000;
   text-decoration: underline;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.register {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 722px;
+  background-color: rgba(9, 40, 66, 0.6);
+  background-blend-mode: multiply;
+  background-image: url(../img/登入背景.jpg);
+  background-size: cover;
+  background-position: center left;
 }
 
 .register_form {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 62, 67, 0.72)), to(#041B1F));
-  background: linear-gradient(180deg, rgba(37, 62, 67, 0.72) 0%, #041B1F 100%);
+  background: rgba(238, 232, 232, 0.8);
+  position: relative;
+  overflow: hidden;
+  border-top: #FFDD00 solid 10px;
+}
+
+.register_form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  z-index: -1;
+  margin: -30px;
+}
+
+.register_form .back_btn {
+  background: #1C383E;
+}
+
+.register_form .back_btn:hover {
+  background: #214952;
 }
 
 .register_form .register_btn:hover {
   background: #fffb00;
-  color: #1C383E;
-}
-
-.register_form .back_btn:hover {
-  background: #c7c7c7;
-  color: #FAFAFA;
 }
 
 .class .topnav a {
@@ -1368,29 +1475,6 @@ img {
   height: 100px;
 }
 
-.class__content .tag {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.class__content .tag a {
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-.class__content .tag a:hover {
-  background-color: #4F4E4B;
-  color: #FFDD00;
-}
-
-.class__content .realitive--article li:hover {
-  background: #f3f2f2;
-}
-
-.class__content .realitive--article h3:hover {
-  color: #226F7D;
-}
-
 .class__content .near--page__btn {
   background: #FFDD00;
   text-align: center;
@@ -1406,13 +1490,17 @@ img {
   transition: 0.1s;
 }
 
-.news .topnav {
-  background: #BFB595;
-  border-radius: 10px;
+.class__content .realitive--article li a:hover {
+  background: #f3f2f2;
 }
 
-.news .topnav a {
-  color: #4F4E4B;
+.class__content .realitive--article li a:hover h3 {
+  color: rgba(9, 44, 81, 0.88);
+  text-decoration: underline;
+}
+
+.news .topnav {
+  background: #4599d5;
 }
 
 .news .topnav a:hover {
@@ -1421,89 +1509,22 @@ img {
   border-radius: 10px;
 }
 
-.news .topnav input {
-  font-size: 16px;
-  width: 100%;
-  border-radius: 5px 0 0 5px;
-  border-style: unset;
-}
-
-.news .topnav button {
-  border-style: unset;
-  border-radius: 0 5px 5px 0;
-}
-
-.news .topnav button:hover {
-  background-color: #ebcf46;
-}
-
 .news img {
   width: 120px;
-  height: 80px;
+  height: 100px;
 }
 
-.news .content-left, .news .content-right {
-  border-radius: 10px;
+.news .content-left li a:hover, .news .content-right li a:hover {
+  background: #f3f2f2;
 }
 
-.news .content-left .content h3, .news .content-right .content h3 {
-  font-size: 16px;
-  color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.news .content-left .content h3:hover, .news .content-right .content h3:hover {
-  color: #BFB595;
-}
-
-.news .content-left .content p, .news .content-right .content p {
-  font-size: 14px;
-}
-
-.news .content-left {
-  width: 60%;
-}
-
-.news .content-left > h3 {
-  background-color: #ebcf46;
-  border-radius: 10px 10px 0 0;
-}
-
-.news .content-right {
-  width: 35%;
-}
-
-.news .content-right > h3 {
-  background-color: #ebcf46;
-  border-radius: 10px 10px 0 0;
-}
-
-.news .content-right li:last-child {
-  border-radius: 0 0 10px 10px;
-}
-
-.news .border-bottom {
-  border-bottom: 1px solid darkgray;
-}
-
-.news .pagination a {
-  color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.news .pagination a:hover {
-  color: #ebcf46;
+.news .content-left li a:hover h3, .news .content-right li a:hover h3 {
+  color: rgba(9, 44, 81, 0.88);
+  text-decoration: underline;
 }
 
 .news-content .topnav {
-  background: #BFB595;
-  border-radius: 10px;
-}
-
-.news-content .topnav a {
-  color: #4F4E4B;
+  background: #4599d5;
 }
 
 .news-content .topnav a:hover {
@@ -1512,67 +1533,13 @@ img {
   border-radius: 10px;
 }
 
-.news-content .topnav input {
-  font-size: 16px;
-  width: 100%;
-  border-radius: 5px 0 0 5px;
-  border-style: none;
+.news-content .content-left li a:hover, .news-content .content-right li a:hover {
+  background: #f3f2f2;
 }
 
-.news-content .topnav button {
-  border-style: none;
-  border-radius: 0 5px 5px 0;
-}
-
-.news-content .topnav button:hover {
-  background-color: #ebcf46;
-}
-
-.news-content .content-left {
-  width: 60%;
-  border-radius: 10px;
-}
-
-.news-content .content-left img {
-  width: 600px;
-  height: 400px;
-}
-
-.news-content .content-right {
-  width: 35%;
-}
-
-.news-content .content-right > h3 {
-  background-color: #ebcf46;
-  border-radius: 10px 10px 0 0;
-}
-
-.news-content .content-right li {
-  border-bottom: 2px dotted gray;
-}
-
-.news-content .content-right li:last-child {
-  border-radius: 0 0 10px 10px;
-  border-bottom: transparent;
-}
-
-.news-content .content-right img {
-  width: 100px;
-  height: 80px;
-}
-
-.news-content .content-right .content a {
-  color: #4F4E4B;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.news-content .content-right .content a:hover {
-  color: #BFB595;
-}
-
-.news-content .border-bottom {
-  border-bottom: 1px solid darkgray;
+.news-content .content-left li a:hover h3, .news-content .content-right li a:hover h3 {
+  color: rgba(9, 44, 81, 0.88);
+  text-decoration: underline;
 }
 
 .forum .topnav {
@@ -1664,34 +1631,13 @@ img {
 }
 
 .forum-content .topnav {
-  background: #BFB595;
-  border-radius: 10px;
-}
-
-.forum-content .topnav a {
-  color: #4F4E4B;
+  background: #4599d5;
 }
 
 .forum-content .topnav a:hover {
   background-color: #4F4E4B;
   color: #ebcf46;
   border-radius: 10px;
-}
-
-.forum-content .topnav input {
-  font-size: 16px;
-  width: 100%;
-  border-radius: 5px 0 0 5px;
-  border-style: unset;
-}
-
-.forum-content .topnav button {
-  border-style: unset;
-  border-radius: 0 5px 5px 0;
-}
-
-.forum-content .topnav button:hover {
-  background-color: #ebcf46;
 }
 
 .forum-content .article {
@@ -1781,6 +1727,40 @@ img {
   background-color: #ebcf46;
 }
 
+.forum-content .discussing--content li:hover {
+  background: #f3f2f2;
+}
+
+.forum-content .discussing--content li a .Avatars {
+  position: relative;
+  width: 20%;
+  /* 固定寬度 */
+  margin-right: 22px;
+}
+
+.forum-content .discussing--content li a .Avatars::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  /*padding取決於寬度，這裡設定padding-bottom: 100%就可以得到正方形*/
+}
+
+.forum-content .discussing--content li a .Avatars img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*將圖片大小固定為父類div的大小*/
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* 相當於 background-size: cover; of a background-image */
+  -o-object-position: center;
+     object-position: center;
+}
+
 .forum-write .topnav {
   background: #BFB595;
   border-radius: 10px 10px 0 0;
@@ -1868,6 +1848,22 @@ img {
   transition: 0.1s;
 }
 
+.personal--page__content .edit__btn {
+  background: #FFDD00;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 16px;
+}
+
+.personal--page__content .edit__btn:hover {
+  color: #FAFAFA;
+  background: #1C383E;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
 .personal--page__content .close__btn {
   background: #db2a2a;
   color: #FAFAFA;
@@ -1913,7 +1909,7 @@ img {
 }
 
 .personal--page__content .trade--table .trade--table__item:hover {
-  background: #f8f190;
+  background: #f3f2f2;
 }
 
 .personal--transactionRecord__content .trade--table th, .personal--transactionRecord__content .trade--table td {
@@ -1934,7 +1930,7 @@ img {
 }
 
 .trade__content .trade--table .trade--table__item:hover {
-  background: #faf6bd;
+  background: #f3f3f2;
 }
 
 .trade__content .drop--menu li a {

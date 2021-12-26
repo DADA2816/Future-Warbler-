@@ -17,6 +17,9 @@
 
     <link rel="stylesheet" href="../scss/all.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
     <script>
         function copyFn() {
             var val = document.getElementById('copyMy');
@@ -29,120 +32,183 @@
 <body>
     <div class="wrap d-flex m0-a">
         <div class="side">
-            <h1 class="fz-xl fwb">F<span class="bright">u</span>ture <br> &nbsp;&nbsp;Warbl<span class="bright">e</span>r </h1>
+            <h1 class="fz-xl fwb">F<span class="bright">u</span>tures <br> &nbsp;&nbsp;Warbl<span class="bright">e</span>r </h1>
             <ul class="menu">
-                <li><a href="index.html"><i class="fas fa-home mr-2"></i>首頁</a></li>
-                <li><a href="#"><i class="fas fa-university mr-2"></i>模擬交易所</a></li>
-                <li><a href="class.html"><i class="fas fa-chalkboard-teacher mr-2"></i>期貨小教室</a></li>
-                <li><a href="#"><i class="fas fa-robot mr-2"></i>智能機器人顧問</a></li>
-                <li><a href="news.html"><i class="fas fa-newspaper mr-2"></i>新聞</a></li>
-                <li><a href="forum.html"><i class="fas fa-comment-alt mr-2"></i>討論版</a></li>
-                <li><a href="#"><i class="fas fa-user-alt mr-2"></i>個人頁面</a></li>
+                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="index.html"><i class="fas fa-home mr-4"></i>首頁</a></li>
+                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="trade.html"><i class="fas fa-university mr-4"></i>模擬交易所</a></li>
+                <li class="drop--menu">
+                    <a href="" class="main--menu  pt-2 pb-2 pl-9 mb-3 ">
+                        <i class="fas fa-chalkboard-teacher mr-4 "></i>期貨小教室<i class="fas fa-chevron-down  ml-6 fz-s"></i>
+                    </a>
+                    <ul class=" d-none">
+                        <li class="sub--menu"><a href="class.html">期貨基本知識</a></li>
+                        <li class="sub--menu"><a href="">期貨基本指標</a></li>
+                    </ul>
+                </li>
+                <li class="drop--menu">
+                    <a href="" class="main--menu  pt-3 pb-3 pl-9 mb-3">
+                        <i class="fas fa-chalkboard-teacher mr-4"></i>智能機器人顧問<i class="fas fa-chevron-down  ml-6 fz-s"></i>
+                    </a>
+                    <ul class=" d-none">
+                        <li class="sub--menu"><a href="robot-normal.html">一般交易系統</a></li>
+                        <li class="sub--menu"><a href="robot-intelligent.html">智能交易系統</a></li>
+                    </ul>
+                </li>
+                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="news.html"><i class="fas fa-newspaper mr-4"></i>新聞</a></li>
+                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3 chosed"><a href="forum.html"><i class="fas fa-comment-alt mr-4"></i>討論版</a></li>
+                <li class="main--menu pt-2 pr-5 pb-2 pl-9 mb-3"><a href="personal-page.html"><i class="fas fa-user-alt mr-4"></i>個人頁面</a></li>
             </ul>
         </div>
-        <div class="forum-content container">
-            <ul class="header--button d-flex jcfe">
-                <li><a href="#" class="header__login--button fz-s tac mr-3">登入</a></li>
-                <li><a href="#" class="header__register--button fz-s tac">註冊</a></li>
+        <div class="container pb-4">
+            <ul class="header d-flex jcfe  text-shadow p-3 card-shadow">
+                <li><a href="#" class="header__login--button dark-gray  mr-2 tac br-s fwb">登入</a></li>
+                <li><a href="#" class="header__register--button dark-gray  mr-2 tac br-s fwb">註冊</a></li>
             </ul>
-            <div class="topnav d-flex jcsb aic mt-15 mb-6 pr-4">
-                <ul class="d-flex fwb">
-                    <li><a href="#" class="d-inline-block pt-3 pb-3 pl-4 pr-4 mr-2">熱門貼文</a></li>
-                    <li><a href="#" class="d-inline-block pt-3 pb-3 pl-4 pr-4">最新貼文</a></li>
-                </ul>
-                <form action="#" class="search topnav d-flex jcsb aic">
-                    <input type="search" placeholder="請輸入關鍵字.." class="d-inline-block p-2" name="search">
-                    <button class="d-inline-block white-bg p-2" type="submit"><i class='fas fa-search d-inline-block' style="font-size: 18px;"></i></button>
+            <div class="forum-content">
+                <form action="#" class="d-flex  jcfe fr mt-2 pr-4">
+                    <input type="search" name="record" id="record" placeholder="search here..." class="search_input b-n pt-2 pb-2 pl-4 pr-3  box-shadow">
+                    <button class="search_btn b-n pt-2 pb-2 pl-3 pr-3  box-shadow"><i class="fas fa-search fz-s"></i></button>
                 </form>
-            </div>
-            <div class="article p-4 white-bg">
-                <div class="user d-flex aic mb-4">
-                    <img src="img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
-                    <div class="user-content">
-                        <h4>Emily</h4>
-                        <p class="fz-xs">22 小時前</p>
+                <div class="clearfix"></div>
+                <div class="w-100 pl-12 pr-10 b-4 mt-6">
+                    <div class="content-left fl white-bg w-60 br-m mr-4pct card-shadow  p-5">
+                        <div class="article p-4 white-bg">
+                            <div class="user d-flex aic mb-4">
+                                <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
+                                <div class="user-content">
+                                    <h4>Emily</h4>
+                                    <p class="fz-xs">22 小時前</p>
+                                </div>
+                            </div>
+                            <h3 class="title fz-l fwb mt-2 mb-3">如何突破思考慣性，掌握反敗為勝關鍵？</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste praesentium perspiciatis fugiat illum exercitationem! Officia inventore vitae quaerat temporibus, odit, eum eos voluptatum nemo consectetur voluptatem iste veritatis veniam necessitatibus.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ullam magnam pariatur reprehenderit veniam quibusdam dolorum? Non, unde? Laborum cupiditate quia aspernatur laboriosam unde necessitatibus suscipit possimus, nesciunt expedita commodi?</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis ea voluptate animi itaque laudantium, officia possimus consequatur ducimus porro eius corrupti ad, dolor incidunt! Laudantium suscipit nostrum eveniet dicta natus?</p>
+                            <div class="code mt-4 p-5">
+                                <div class="d-flex jcsb aic mb-2">
+                                    <h2 class="fz-m fwb">程式範例：</h2>
+                                    <a href="#" class="d-inline-block p-2 fz-s black"  onClick="copyFn()">一鍵複製</a>
+                                </div>
+                                <p class="white-bg p-4" id="copyMy" class="copyMy">
+                                   lorem .....<br>
+                                   lorem .....<br>
+                                   lorem .....<br>
+                                   lorem .....<br>
+                                   lorem .....<br>
+                                   lorem .....<br>
+                                   lorem .....<br>
+                                   lorem .....<br>
+                                   lorem .....<br>
+                                </p>
+                            </div>
+                            <div class="prise d-flex jcsb aic mt-4">
+                                <ul class="d-flex">
+                                    <li class="mr-3"><i class="fas fa-comment-alt mr-2" style="font-size: 18px;"></i>5</li>
+                                    <li><i class="fas fa-heart mr-2" style="font-size: 18px;"></i>50</li>
+                                </ul>
+                                <a href="#"><i class="fas fa-heart mr-2" style="font-size: 20px;"></i></a>
+                            </div>
+                            <hr class="mt-3">
+                        </div>
+                        <div class="message p-4 white-bg">
+                            <div class="d-flex aic jcsb">
+                                <h4 class="fz-m mb-1 fwb">全部留言</h4>
+                                <form name=”表單名稱”  method=”傳輸方式”  action=”#”>
+                                    <select name=”傳遞訊息名稱: class="p-1 pr-2">
+                                        <option value=”傳值_1”>順序：由新至舊</option>
+                                        <option value=”傳值_2”>順序：由舊至新</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <ul>
+                                <li class="user d-flex border-bottom pt-4 pb-4">
+                                    <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
+                                    <div class="user-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
+                                        <p class="fz-xs">Emily｜22 小時前</p>
+                                    </div>
+                                </li>
+                                <li class="user d-flex border-bottom pt-4 pb-4">
+                                    <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
+                                    <div class="user-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
+                                        <p class="fz-xs">Emily｜22 小時前</p>
+                                    </div>
+                                </li>
+                                <li class="user d-flex border-bottom pt-4 pb-4">
+                                    <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
+                                    <div class="user-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
+                                        <p class="fz-xs">Emily｜22 小時前</p>
+                                    </div>
+                                </li>
+                                <li class="user d-flex border-bottom pt-4 pb-4">
+                                    <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
+                                    <div class="user-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
+                                        <p class="fz-xs">Emily｜22 小時前</p>
+                                    </div>
+                                </li>
+                                <li class="user d-flex border-bottom pt-4 pb-4">
+                                    <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
+                                    <div class="user-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
+                                        <p class="fz-xs">Emily｜22 小時前</p>
+                                    </div>
+                                </li>
+                                <li class="user pt-4 pb-4">
+                                    <form action="#" class="leave-message d-flex">
+                                        <img src="../img/大頭貼2.jpg" alt="大頭貼2" class="mr-2">
+                                        <input type="text" placeholder="留言..." class="d-inline-block p-2" name="text">
+                                        <button class="d-inline-block white-bg p-2 pl-4 pr-4" type="submit">提交</button>
+                                    </form>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                    <div class="content-right fl white-bg w-35 br-m card-shadow pb-4 ">
+                        <h3 class="fz-m fwb ml-4 mr-4 mt-4 mb-4  d-inline-block">熱門貼文</h3>
+                        <ul class="discussing--content">
+                            <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom b-top">
+                                <div class="Avatars">
+                                    <img src="../img/大頭貼1.jpg" alt="大頭貼1">
+                                </div>
+                                <div class="discussing--text">
+                                    <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                    <p class="fz-s dark-gray">-Brian | 2021.11.28 16:20 | <i class="fas fa-comment-alt"></i> 5</p>
+                                </div>
+                            </a></li>
+                            <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom">
+                                <div class="Avatars">
+                                    <img src="../img/大頭貼2.jpg" alt="大頭貼2">
+                                </div>
+                                <div class="discussing--text">
+                                    <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                    <p class="fz-s dark-gray">-Lora | 2021.11.25 11:30 | <i class="fas fa-comment-alt"></i> 10</p>
+                                </div>
+                            </a></li>
+                            <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom">
+                                <div class="Avatars">
+                                    <img src="../img/大頭貼3.jpg" alt="大頭貼3">
+                                </div>
+                                <div class="discussing--text">
+                                    <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                    <p class="fz-s dark-gray">-Alex | 2021.11.20 20:40 | <i class="fas fa-comment-alt"></i> 8</p>
+                                </div>
+                            </a></li>
+                            <li><a href="" class="d-flex jcsb p-5 pb-11 b-bottom">
+                                <div class="Avatars">
+                                    <img src="../img/大頭貼4.jpg" alt="大頭貼4">
+                                </div>
+                                <div class="discussing--text">
+                                    <h3 class="dark-gray fz-s fwb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                                    <p class="fz-s dark-gray">-Linda | 2021.11.01 00:05 | <i class="fas fa-comment-alt"></i> 7</p>
+                                </div>
+                            </a></li>
+                        </ul>
                     </div>
                 </div>
-                <h3 class="title fz-l fwb mt-2 mb-3">如何突破思考慣性，掌握反敗為勝關鍵？</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste praesentium perspiciatis fugiat illum exercitationem! Officia inventore vitae quaerat temporibus, odit, eum eos voluptatum nemo consectetur voluptatem iste veritatis veniam necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ullam magnam pariatur reprehenderit veniam quibusdam dolorum? Non, unde? Laborum cupiditate quia aspernatur laboriosam unde necessitatibus suscipit possimus, nesciunt expedita commodi?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis ea voluptate animi itaque laudantium, officia possimus consequatur ducimus porro eius corrupti ad, dolor incidunt! Laudantium suscipit nostrum eveniet dicta natus?</p>
-                <div>
-                </div>
-                <div class="code mt-4 p-5">
-                    <h2 class="mb-2 fz-m fwb">程式範例：</h2>
-                    <p class="white-bg p-4" id="copyMy">
-                       lorem .....<br>
-                       lorem .....<br>
-                       lorem .....<br>
-                       lorem .....<br>
-                       lorem .....<br>
-                       lorem .....<br>
-                       lorem .....<br>
-                       lorem .....<br>
-                       lorem .....<br>
-                    </p>
-                    <a class="d-inline-block p-3 fz-s mt-3" onClick="copyFn()">點擊複製</a>
-                </div>
-                <ul class="prise mt-4 d-flex">
-                    <li class="mr-3"><a href="#"><i class="fas fa-comment-alt mr-2" style="font-size: 20px;"></i></a>留言數 5</li>
-                    <li><a href="#"><i class="fas fa-heart mr-2" style="font-size: 20px;"></i></a>喜歡 50</li>
-                </ul>
-                <hr class="mt-3">
-            </div>
-            <div class="message p-4 white-bg">
-                <h4 class="fz-m mb-1 fwb">全部留言</h4>
-                <div class="message-nav d-flex jcsb mb-3">
-                    <ul class="filter d-flex">
-                        <li><a href="#" class="d-inline-block p-2 mr-2 fz-s">由新至舊</a></li></a>
-                        <li><a href="#" class="d-inline-block p-2 fz-s">由舊至新</a></li></a>
-                    </ul>
-                </div>
-                <ul>
-                    <li class="user d-flex border-bottom pt-4 pb-4">
-                        <img src="img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
-                        <div class="user-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
-                            <p class="fz-xs">Emily｜22 小時前</p>
-                        </div>
-                    </li>
-                    <li class="user d-flex border-bottom pt-4 pb-4">
-                        <img src="img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
-                        <div class="user-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
-                            <p class="fz-xs">Emily｜22 小時前</p>
-                        </div>
-                    </li>
-                    <li class="user d-flex border-bottom pt-4 pb-4">
-                        <img src="img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
-                        <div class="user-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
-                            <p class="fz-xs">Emily｜22 小時前</p>
-                        </div>
-                    </li>
-                    <li class="user d-flex border-bottom pt-4 pb-4">
-                        <img src="img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
-                        <div class="user-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
-                            <p class="fz-xs">Emily｜22 小時前</p>
-                        </div>
-                    </li>
-                    <li class="user d-flex border-bottom pt-4 pb-4">
-                        <img src="img/大頭貼2.jpg" alt="大頭貼2" class="mr-4">
-                        <div class="user-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto magni harum natus quos enim? Ratione soluta ut natus ducimus possimus, sequi magnam.</p>
-                            <p class="fz-xs">Emily｜22 小時前</p>
-                        </div>
-                    </li>
-                    <li class="user pt-4 pb-4">
-                        <form action="#" class="leave-message d-flex">
-                            <img src="img/大頭貼2.jpg" alt="大頭貼2" class="mr-2">
-                            <input type="text" placeholder="留言..." class="d-inline-block p-2" name="text">
-                            <button class="d-inline-block white-bg p-2 pl-4 pr-4" type="submit">提交</button>
-                        </form>
-                    </li>
-                </ul>
-               
             </div>
             
         </div>
